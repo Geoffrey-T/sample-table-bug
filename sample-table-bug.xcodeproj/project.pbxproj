@@ -15,6 +15,11 @@
 		2C0BB3FC1DE5A98000EEF598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0BB3FA1DE5A98000EEF598 /* LaunchScreen.storyboard */; };
 		2C0BB4071DE5A98100EEF598 /* sample_table_bugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB4061DE5A98100EEF598 /* sample_table_bugTests.m */; };
 		2C0BB4121DE5A98100EEF598 /* sample_table_bugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB4111DE5A98100EEF598 /* sample_table_bugUITests.m */; };
+		2C0BB4261DE5A9C200EEF598 /* TLSCustomerTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB4231DE5A9C200EEF598 /* TLSCustomerTabViewController.m */; };
+		2C0BB4271DE5A9C200EEF598 /* TLSTopTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB4251DE5A9C200EEF598 /* TLSTopTabBar.m */; };
+		2C0BB42B1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB4291DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.m */; };
+		2C0BB42C1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0BB42A1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.xib */; };
+		2C0BB42F1DE5A9D200EEF598 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BB42E1DE5A9D200EEF598 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		2C0BB40D1DE5A98100EEF598 /* sample-table-bugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-table-bugUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0BB4111DE5A98100EEF598 /* sample_table_bugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sample_table_bugUITests.m; sourceTree = "<group>"; };
 		2C0BB4131DE5A98100EEF598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0BB4221DE5A9C200EEF598 /* TLSCustomerTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSCustomerTabViewController.h; sourceTree = "<group>"; };
+		2C0BB4231DE5A9C200EEF598 /* TLSCustomerTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSCustomerTabViewController.m; sourceTree = "<group>"; };
+		2C0BB4241DE5A9C200EEF598 /* TLSTopTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSTopTabBar.h; sourceTree = "<group>"; };
+		2C0BB4251DE5A9C200EEF598 /* TLSTopTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSTopTabBar.m; sourceTree = "<group>"; };
+		2C0BB4281DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSCustomerInfoContentViewController.h; sourceTree = "<group>"; };
+		2C0BB4291DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSCustomerInfoContentViewController.m; sourceTree = "<group>"; };
+		2C0BB42A1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLSCustomerInfoContentViewController.xib; sourceTree = "<group>"; };
+		2C0BB42D1DE5A9D200EEF598 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2C0BB42E1DE5A9D200EEF598 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,9 @@
 		2C0BB3EB1DE5A98000EEF598 /* sample-table-bug */ = {
 			isa = PBXGroup;
 			children = (
+				2C0BB4211DE5A9B300EEF598 /* pageview */,
+				2C0BB4201DE5A9AE00EEF598 /* container */,
+				2C0BB41F1DE5A9AA00EEF598 /* table */,
 				2C0BB3EF1DE5A98000EEF598 /* AppDelegate.h */,
 				2C0BB3F01DE5A98000EEF598 /* AppDelegate.m */,
 				2C0BB3F21DE5A98000EEF598 /* ViewController.h */,
@@ -138,6 +155,36 @@
 				2C0BB4131DE5A98100EEF598 /* Info.plist */,
 			);
 			path = "sample-table-bugUITests";
+			sourceTree = "<group>";
+		};
+		2C0BB41F1DE5A9AA00EEF598 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				2C0BB42D1DE5A9D200EEF598 /* TableViewController.h */,
+				2C0BB42E1DE5A9D200EEF598 /* TableViewController.m */,
+			);
+			name = table;
+			sourceTree = "<group>";
+		};
+		2C0BB4201DE5A9AE00EEF598 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				2C0BB4281DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.h */,
+				2C0BB4291DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.m */,
+				2C0BB42A1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.xib */,
+			);
+			name = container;
+			sourceTree = "<group>";
+		};
+		2C0BB4211DE5A9B300EEF598 /* pageview */ = {
+			isa = PBXGroup;
+			children = (
+				2C0BB4221DE5A9C200EEF598 /* TLSCustomerTabViewController.h */,
+				2C0BB4231DE5A9C200EEF598 /* TLSCustomerTabViewController.m */,
+				2C0BB4241DE5A9C200EEF598 /* TLSTopTabBar.h */,
+				2C0BB4251DE5A9C200EEF598 /* TLSTopTabBar.m */,
+			);
+			name = pageview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0BB42C1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.xib in Resources */,
 				2C0BB3FC1DE5A98000EEF598 /* LaunchScreen.storyboard in Resources */,
 				2C0BB3F91DE5A98000EEF598 /* Assets.xcassets in Resources */,
 				2C0BB3F71DE5A98000EEF598 /* Main.storyboard in Resources */,
@@ -273,8 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0BB4271DE5A9C200EEF598 /* TLSTopTabBar.m in Sources */,
+				2C0BB4261DE5A9C200EEF598 /* TLSCustomerTabViewController.m in Sources */,
 				2C0BB3F41DE5A98000EEF598 /* ViewController.m in Sources */,
 				2C0BB3F11DE5A98000EEF598 /* AppDelegate.m in Sources */,
+				2C0BB42B1DE5A9CA00EEF598 /* TLSCustomerInfoContentViewController.m in Sources */,
+				2C0BB42F1DE5A9D200EEF598 /* TableViewController.m in Sources */,
 				2C0BB3EE1DE5A98000EEF598 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

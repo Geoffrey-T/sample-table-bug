@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TLSCustomerInfoContentViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    TLSCustomerInfoContentViewController *vc = [[TLSCustomerInfoContentViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0.78];
+    nav.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nav animated:YES completion:nil];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
